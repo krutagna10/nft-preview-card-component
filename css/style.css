@@ -110,23 +110,25 @@ body {
 }
 
 .card {
-  max-width: 24rem;
+  max-width: 22.5rem;
   background-color: var(--dark-blue);
   padding: clamp(0.75rem, 0.5rem + 2vw, 1.125rem);
   border-radius: 0.75rem;
+  box-shadow: 2px 3px 5px hsl(215, 32%, 27%, 0.25);
 }
 
-.card__image-wrapper {
+.card__link {
   position: relative;
+  display: block;
   border-radius: 0.75rem;
 }
 
-.card__image {
+.card__link-image {
   border-radius: 0.75rem;
   cursor: pointer;
 }
 
-.card__image-wrapper::before {
+.card__link::before {
   content: "";
   position: absolute;
   border-radius: 0.75rem;
@@ -136,6 +138,12 @@ body {
   inset: 0;
   background-color: hsl(178, 100%, 50%, 0.4);
   z-index: 99;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.card__link:hover::before {
+  opacity: 1;
 }
 
 .card__text-content {
