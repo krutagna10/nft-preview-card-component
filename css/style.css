@@ -110,9 +110,10 @@ body {
 }
 
 .card {
-  max-width: 22.5rem;
+  max-width: 22rem;
   background-color: var(--dark-blue);
-  padding: clamp(0.75rem, 0.5rem + 2vw, 1.125rem);
+  padding-inline: clamp(0.75rem, 0.5rem + 2vw, 1.125rem);
+  padding-block-start: clamp(0.75rem, 0.5rem + 2vw, 1.125rem);
   border-radius: 0.75rem;
   box-shadow: 2px 3px 5px hsl(215, 32%, 27%, 0.25);
 }
@@ -147,7 +148,7 @@ body {
 }
 
 .card__text-content {
-  --flow-space: 1.25rem;
+  --flow-space: 1.125rem;
 
   padding-block: clamp(1.25rem, 0.5rem + 4vw, 1.5rem);
   padding-inline: clamp(1rem, 0.5rem + 3vw, 1.25rem);

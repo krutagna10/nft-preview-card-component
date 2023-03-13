@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b609917d-811a-4bce-a2ff-d8c8cc541588" name="Changes" comment=".">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b609917d-811a-4bce-a2ff-d8c8cc541588" name="Changes" comment="final update">
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +60,7 @@
       <workItem from="1667801866430" duration="839000" />
       <workItem from="1678623445412" duration="6000" />
       <workItem from="1678634552941" duration="43000" />
-      <workItem from="1678685316025" duration="7432000" />
+      <workItem from="1678685316025" duration="7746000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1666533083822</created>
@@ -78,7 +76,21 @@
       <option name="project" value="LOCAL" />
       <updated>1667802801729</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary=".">
+      <created>1678697139932</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678697139932</updated>
+    </task>
+    <task id="LOCAL-00004" summary="final update">
+      <created>1678697193685</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678697193685</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,6 +112,7 @@
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="final update" />
+    <option name="LAST_COMMIT_MESSAGE" value="final update" />
   </component>
 </project>
