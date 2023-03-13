@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>NFT Preview card component</title>
+  </head>
+
+  <body>
+    <main>
+      <section class="card-section">
+        <div class="card">
+          <div class="card__image-wrapper">
+            <img
+              src="images/image-equilibrium.jpg"
+              class="card__image"
+              alt="Equilibrium image"
+            />
+            <div class="card__overlay">
+              <!--              <img-->
+              <!--                class="card__overlay-image"-->
+              <!--                src="images/icon-view.svg"-->
+              <!--                alt="overlay image"-->
+              <!--              />-->
+            </div>
+          </div>
+          <div class="card__text-content flow">
+            <h2 class="card__title">Equilibrium #3429</h2>
+            <p class="card__description">
+              Our Equilibrium collection promotes balance and calm.
+            </p>
+            <div
+              class="card__crypto-info flex flex--justify-space flex--align-center"
+            >
+              <p class="card__ethereum flex flex--gap">
+                <img src="images/icon-ethereum.svg" alt="" aria-hidden="true" />
+                <span>0.041 ETH</span>
+              </p>
+              <p class="card__days-left flex flex--gap">
+                <img src="images/icon-clock.svg" alt="" aria-hidden="true" />
+                <span>3 days left</span>
+              </p>
+            </div>
+            <div class="card__author-info flex flex--align-center">
+              <div class="card__author-image-wrapper">
+                <img
+                  class="card__author-image"
+                  src="images/image-avatar.png"
+                  alt="author image"
+                />
+              </div>
+              <p class="card__creator">
+                Creation of <span class="card__author-name">Jules Wyvern</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

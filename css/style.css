@@ -1,0 +1,111 @@
+:root {
+  /* Colors */
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --very-dark-blue: hsl(217, 54%, 11%);
+  --dark-blue: hsl(216, 50%, 16%);
+  --blue: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Font Family */
+  --font-outfit: "Outfit", sans-serif;
+
+  /* Font Size */
+  --font-size-300: 1.375rem;
+  --font-size-200: 1.125rem;
+  --font-size-100: 0.9375rem;
+
+  /* Font Weight */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-semi-bold: 600;
+
+  /* Spacing */
+  --flow-space: 1rem;
+  --gap: 1rem;
+}
+
+:root {
+  --font-size-100: 1rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  background-color: var(--very-dark-blue);
+  color: var(--white);
+  font-family: var(--font-outfit);
+  font-size: var(--font-size-200);
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+/* Utility Classes */
+.flex {
+  display: flex;
+}
+
+.flex--justify-space {
+  justify-content: space-between;
+}
+
+.flex--align-center {
+  align-items: center;
+}
+
+.flex--gap {
+  gap: var(--gap);
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space);
+}
+
+.card {
+  max-width: 20rem;
+  background-color: var(--dark-blue);
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+}
+
+.card__title {
+  font-size: var(--font-size-300);
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.card__description {
+  color: var(--blue);
+}
+
+.card__text-content {
+  padding: 1.75rem 1rem;
+}
+
+.card__author-image {
+  max-width: 50%;
+}
+
+.card__ethereum,
+.card__days-left {
+  --gap: 0.5rem;
+}
+
+.card__crypto-info {
+  font-size: var(--font-size-100);
+}
+
+.card__creator {
+  font-size: var(--font-size-100);
+}
