@@ -21,6 +21,7 @@
 
   <body>
     <main>
+      <h1 class="visually-hidden">NFT Preview Card Component</h1>
       <section class="card-section">
         <div class="card">
           <div class="card__image-wrapper">
@@ -29,16 +30,9 @@
               class="card__image"
               alt="Equilibrium image"
             />
-            <div class="card__overlay">
-              <!--              <img-->
-              <!--                class="card__overlay-image"-->
-              <!--                src="images/icon-view.svg"-->
-              <!--                alt="overlay image"-->
-              <!--              />-->
-            </div>
           </div>
           <div class="card__text-content flow">
-            <h2 class="card__title">Equilibrium #3429</h2>
+            <a href="#" class="card__title">Equilibrium #3429</a>
             <p class="card__description">
               Our Equilibrium collection promotes balance and calm.
             </p>
@@ -47,23 +41,23 @@
             >
               <p class="card__ethereum flex flex--gap">
                 <img src="images/icon-ethereum.svg" alt="" aria-hidden="true" />
-                <span>0.041 ETH</span>
+                <span class="card__ethereum-text">0.041 ETH</span>
               </p>
               <p class="card__days-left flex flex--gap">
                 <img src="images/icon-clock.svg" alt="" aria-hidden="true" />
-                <span>3 days left</span>
+                <span class="card__days-left-text">3 days left</span>
               </p>
             </div>
-            <div class="card__author-info flex flex--align-center">
-              <div class="card__author-image-wrapper">
-                <img
-                  class="card__author-image"
-                  src="images/image-avatar.png"
-                  alt="author image"
-                />
-              </div>
+            <div class="card__horizontal-line"></div>
+            <div class="card__author-info flex flex--gap flex--align-center">
+              <img
+                class="card__author-image"
+                src="images/image-avatar.png"
+                alt="author image"
+              />
               <p class="card__creator">
-                Creation of <span class="card__author-name">Jules Wyvern</span>
+                Creation of
+                <a href="#" class="card__author-name">Jules Wyvern</a>
               </p>
             </div>
           </div>

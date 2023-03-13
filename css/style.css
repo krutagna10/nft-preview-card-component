@@ -52,7 +52,42 @@ body {
   place-content: center;
 }
 
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+
+    scroll-behavior: auto !important;
+  }
+}
+
 /* Utility Classes */
+.visually-hidden {
+  position: absolute;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Flow Utility for spacing */
+.flow > * + * {
+  margin-top: var(--flow-space);
+}
+
+/* Flex Utility */
 .flex {
   display: flex;
 }
@@ -69,43 +104,101 @@ body {
   gap: var(--gap);
 }
 
-.flow > * + * {
-  margin-top: var(--flow-space);
+/* Card Styling */
+.card-section {
+  padding-inline: 1rem;
 }
 
 .card {
-  max-width: 20rem;
+  max-width: 24rem;
   background-color: var(--dark-blue);
-  padding: 0.75rem;
+  padding: clamp(0.75rem, 0.5rem + 2vw, 1.125rem);
   border-radius: 0.75rem;
+}
+
+.card__image-wrapper {
+  position: relative;
+  border-radius: 0.75rem;
+}
+
+.card__image {
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
+
+.card__image-wrapper::before {
+  content: "";
+  position: absolute;
+  border-radius: 0.75rem;
+  background-image: url("/images/icon-view.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  inset: 0;
+  background-color: hsl(178, 100%, 50%, 0.4);
+  z-index: 99;
+}
+
+.card__text-content {
+  --flow-space: 1.25rem;
+
+  padding-block: clamp(1.25rem, 0.5rem + 4vw, 1.75rem);
+  padding-inline: clamp(1rem, 0.5rem + 3vw, 1.25rem);
 }
 
 .card__title {
   font-size: var(--font-size-300);
   font-weight: var(--font-weight-semi-bold);
+  color: var(--white);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.card__title:hover {
+  color: var(--cyan);
 }
 
 .card__description {
-  color: var(--blue);
-}
-
-.card__text-content {
-  padding: 1.75rem 1rem;
-}
-
-.card__author-image {
-  max-width: 50%;
+  color: var(--soft-blue);
+  font-weight: var(--font-weight-light);
+  font-size: var(--font-size-200);
 }
 
 .card__ethereum,
 .card__days-left {
   --gap: 0.5rem;
+  font-size: var(--font-size-100);
 }
 
-.card__crypto-info {
-  font-size: var(--font-size-100);
+.card__ethereum-text {
+  color: var(--cyan);
+}
+
+.card__days-left-text {
+  color: var(--soft-blue);
+}
+
+.card__horizontal-line {
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 1px;
+}
+
+.card__author-image {
+  max-width: 15%;
+  border: 2px solid white;
+  border-radius: 50%;
 }
 
 .card__creator {
   font-size: var(--font-size-100);
+  color: var(--soft-blue);
+}
+
+.card__author-name {
+  color: var(--white);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.card__author-name:hover {
+  color: var(--cyan);
 }
